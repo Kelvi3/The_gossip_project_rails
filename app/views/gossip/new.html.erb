@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Créer un potin</title>
+  </head>
+  <body>
+    <h1>Crée un potin !</h1>
+    <form action='/gossip/new/' method='POST'>
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token%>">
+      Saisi ici ton nom :  <input type='text' name='author'/><br/><br/>
+      Balance ton potin : <input type='text' name='content'/><br/><br/>
+      <input type='submit'/><br/><br/>
+    </form>
+  </body>
+</html>
